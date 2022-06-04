@@ -1,0 +1,40 @@
+{
+  "name": "l.markercluster",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./dist/l.markercluster.cjs",
+  "module": "./dist/l.markercluster.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/l.markercluster.cjs",
+      "import": "./dist/l.markercluster.mjs"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "test": "karma start ./karma.conf.cjs",
+    "lint:scripts": "eslint . --ext .js",
+    "format:scripts": "eslint . --ext .js --fix"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "esbuild": "^0.14.42",
+    "eslint": "^8.11.0",
+    "happen": "^0.3.2",
+    "karma": "^6.3.20",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-esbuild": "^2.2.4",
+    "karma-mocha": "^2.0.1",
+    "karma-rollup-preprocessor": "^7.0.8",
+    "leaflet": "^1.7.1",
+    "mocha": "^10.0.0",
+    "rollup": "^2.75.5",
+    "vite": "^2.8.0"
+  },
+  "peerDependencies": {
+    "leaflet": "^1.7.1"
+  }
+}
