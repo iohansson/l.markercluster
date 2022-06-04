@@ -1,6 +1,11 @@
 {
-  "name": "l.markercluster",
-  "private": true,
+  "name": "leaflet.markercluster.esm",
+  "repository": "https://github.com/iohansson/l.markercluster",
+  "bugs": {
+    "url": "https://github.com/iohansson/l.markercluster/issues"
+  },
+  "homepage": "https://github.com/iohansson/l.markercluster",
+  "description": "Provides Beautiful Animated Marker Clustering functionality for Leaflet (ESM Plugin Version)",
   "version": "0.1.0",
   "main": "./dist/l.markercluster.cjs",
   "module": "./dist/l.markercluster.mjs",
@@ -36,5 +41,12 @@
   },
   "peerDependencies": {
     "leaflet": "^1.7.1"
-  }
+  },
+  "keywords": [
+    "leaflet",
+    "map",
+    "cluster",
+    "marker"
+  ],
+  "license": "MIT"
 }

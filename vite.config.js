@@ -1,23 +1,10 @@
 import path from 'path';
 import { defineConfig } from 'vite';
-import packageJson from './package.json' assert { type: 'json' };
-
-const getPackageName = () => {
-  return packageJson.name;
-};
-
-const getPackageNameCamelCase = () => {
-  try {
-    return getPackageName().replace(/-./g, (char) => char[1].toUpperCase());
-  } catch (err) {
-    throw new Error('Name property in package.json is missing.');
-  }
-};
 
 const fileName = {
-  es: `${getPackageName()}.mjs`,
-  cjs: `${getPackageName()}.cjs`,
-  iife: `${getPackageName()}.iife.js`,
+  es: 'l.markercluster.mjs',
+  cjs: 'l.markercluster.cjs',
+  iife: 'l.markercluster.iife.js',
 };
 
 export default defineConfig({
