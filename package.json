@@ -21,7 +21,8 @@
     "build": "vite build",
     "test": "karma start ./karma.conf.cjs",
     "lint:scripts": "eslint . --ext .js",
-    "format:scripts": "eslint . --ext .js --fix"
+    "format:scripts": "eslint . --ext .js --fix",
+    "prepublish": "pnpm build"
   },
   "devDependencies": {
     "@rollup/plugin-json": "^4.1.0",
@@ -48,5 +49,8 @@
     "cluster",
     "marker"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "dist/*.*"
+  ]
 }
